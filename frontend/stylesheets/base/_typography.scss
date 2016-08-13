@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'agenda-bold';
+  src: url('../fonts/ufonts.com_agenda-bold.eot');
+  src: local('☺'), url('../fonts/ufonts.com_agenda-bold.woff') format('woff'), url('../fonts/ufonts.com_agenda-bold.ttf') format('truetype'), url('../fonts/ufonts.com_agenda-bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'agendaregular';
+    src: url('../fonts/agenda__-webfont.eot');
+    src: url('../fonts/agenda__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/agenda__-webfont.woff') format('woff'),
+         url('../fonts/agenda__-webfont.ttf') format('truetype'),
+         url('../fonts/agenda__-webfont.svg#agendaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'agendamedium';
+    src: url('../fonts/agendamedium-webfont.eot');
+    src: url('../fonts/agendamedium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/agendamedium-webfont.woff') format('woff'),
+         url('../fonts/agendamedium-webfont.ttf') format('truetype'),
+         url('../fonts/agendamedium-webfont.svg#agendamedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaLTStd-Bold';
+  src: url('../fonts/HelveticaLTStd-Bold.eot');
+  src: local('☺'), url('../fonts/HelveticaLTStd-Bold.woff') format('woff'), url('../fonts/HelveticaLTStd-Bold.ttf') format('truetype'), url('../fonts/HelveticaLTStd-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaLTStd-Roman';
+  src: url('../fonts/HelveticaLTStd-Roman.eot');
+  src: local('☺'), url('../fonts/HelveticaLTStd-Roman.woff') format('woff'), url('../fonts/HelveticaLTStd-Roman.ttf') format('truetype'), url('../fonts/HelveticaLTStd-Roman.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Md';
+  src: url('../fonts/HelveticaNeueLTStd-Md.eot');
+  src: local('☺'), url('../fonts/HelveticaNeueLTStd-Md.woff') format('woff'), url('../fonts/HelveticaNeueLTStd-Md.ttf') format('truetype'), url('../fonts/HelveticaNeueLTStd-Md.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?l73cg6');
+  src:  url('../fonts/icomoon.eot?l73cg6#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?l73cg6') format('truetype'),
+    url('../fonts/icomoon.woff?l73cg6') format('woff'),
+    url('../fonts/icomoon.svg?l73cg6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ic_keyboard_arrow_right_48px:before {
+  content: "\e900";
+}
+.icon-ic_keyboard_arrow_left_48px:before {
+  content: "\e901";
+}
+.icon-social-facebook:before {
+  content: "\e902";
+}
+.icon-Socialmedia_icons_Twitter-06:before {
+  content: "\e903";
+}
+.icon-11_Search:before {
+  content: "\e904";
+}
+.icon-calendar:before {
+  content: "\e905";
+}
+.icon-google-plus2:before {
+  content: "\e906";
+}
+.icon-facebook2:before {
+  content: "\e907";
+}
+.icon-youtube3:before {
+  content: "\e908";
+}
+.icon-linkedin:before {
+  content: "\e909";
+}
+.icon-pinterest:before {
+  content: "\e90a";
+}

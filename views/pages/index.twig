@@ -1,0 +1,62 @@
+{% extends '../layout/_layout.twig' %}
+
+{% block styles %}
+    {{ parent() }}
+    <link rel="stylesheet" href="">
+{% endblock %}
+
+{% block title %}
+ 	Burbank
+{% endblock %}
+
+{% block content %}
+{% include '../layout/modules/gallery.twig' %}
+<div class="popular-see">
+	<div class="container">
+		<div class="be-seen">
+			{% include '../layout/modules/gallery-mini.twig' %}
+		</div>
+		<div class="popular">
+			<h4>Popular Must See Attractions</h4>
+			<ul>
+				<li class="toggle-block slide">
+					<a class="opener" href="#"><span>Warner Bros. Studios VIP Tours</span><em>Warner Bros. Studios VIP Tours</em></a>
+					<div class="slide">
+						<div class="image-holder">
+							<img src="images/img-01.png"  alt="">
+						</div>
+						<div class="text-holder">
+							<strong>See the “Tonight Show” with Jay Leno in person</strong>
+							<p>Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis.</p>
+						</div>
+					</div>
+				</li>					
+				<li class="toggle-block slide">
+					<a class="opener" href="#"><span>Warner Bros. Studios VIP Tours</span><em>Warner Bros. Studios VIP Tours</em></a>
+					<div class="slide">
+						<div class="image-holder">
+							<img src="images/img-01.png"  alt="">
+						</div>
+						<div class="text-holder">
+							<strong>See the “Tonight Show” with Jay Leno in person</strong>
+							<p>Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis.</p>
+						</div>
+					</div>
+				</li>
+				<li class="toggle-block slide">
+					<a class="opener" href="#"><span>Warner Bros. Studios VIP Tours</span><em>Warner Bros. Studios VIP Tours</em></a>
+					<div class="slide">
+						<div class="image-holder">
+							<img src="images/img-01.png"  alt="">
+						</div>
+						<div class="text-holder">
+							<strong>See the “Tonight Show” with Jay Leno in person</strong>
+							<p>Nihil imperdiet doming id quod mazim placerat facer possim assum. Lobortis nisl ut aliqui modo consequat duis.</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,77 @@
+.slider-main{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0 0 50px;
+	li{
+		position: relative;
+	}
+	.text-box{
+		width: 100%;
+		position:absolute;
+		bottom:0;
+		padding: 11px 0 8px;
+		background: rgb(235,106,1); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(235,106,1,0.8) 0%, rgba(255,184,95,0.8) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(235,106,1,0.8) 0%,rgba(255,184,95,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(235,106,1,0.8) 0%,rgba(255,184,95,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb6a01', endColorstr='#ffb85f',GradientType=0 ); /* IE6-9 */
+	}
+	.text-up{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 0 8px;
+		strong{
+			display: block;
+			font-size: 2.57em;
+			font-weight: 300;
+			font-family: 'agendamedium';
+			color:#fff;
+			text-transform: uppercase;
+			text-shadow: 2px 1px 5px #7c7171;
+		}
+		span{
+			font-size: 1.286em;
+			font-weight: 300;
+			font-family: 'agendamedium';
+			color:#fff;
+			text-shadow: 2px 1px 5px #7c7171;
+		}
+	}
+	.text-down{
+		background: #572b7a;
+		text-align: center;
+		padding: 3px 0;
+		span{
+			font-size: 1.5em;
+			font-weight: 300;
+			font-family: 'agendamedium';
+			color:#fff;
+			text-transform: uppercase;
+			text-shadow: 2px 1px 5px #7c7171;
+		}
+		a{
+			position: relative;
+			font-size: 1.5em;
+			font-weight: 300;
+			font-family: 'agendamedium';
+			color:#ff9b4b;
+			text-transform: uppercase;
+			text-shadow: 2px 1px 5px #7c7171;
+			&:before{
+				content:"\e900";
+			    position:absolute;
+			    top:-6px;
+			    right:-30px;
+			    font-size: 1.4em;
+			    font-family: 'icomoon';
+			    color:#e69865;
+			}
+		}
+	}
+}
