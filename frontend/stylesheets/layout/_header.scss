@@ -1,5 +1,5 @@
 header{
-	padding: 3px 0 0 0;
+	padding: 0 0 0 0;
 	margin: 0 0 9px;
 	.container{
 		max-width: 918px;
@@ -7,7 +7,7 @@ header{
 	&:after{
 		content:"";
 		position:absolute;
-		top:42px;
+		top:38px;
 		left:0;
 		background: #662d91;
 		width: 100%;
@@ -24,15 +24,27 @@ header{
 		margin: 0 0 7px;
 	}
 	.search-input{
-		box-shadow: 2px 3px 11px -2px rgba(0,0,0,0.5);
-		margin: 5px 0 0 216px;
+		margin: 5px 0 0 0;
+		flex-grow:1;
+		text-align: center;
+		.search-box{
+			width: 203px;
+			box-shadow: 2px 3px 11px -2px rgba(0,0,0,0.5);
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-between;
+			margin: 0 auto;
+		}
 		input{
 			font-size: 1em;
 			font-weight: 300;
 			font-family: 'agendamedium';
 			color:#252525;
 			border: none;
-			padding: 0 40px 7px 3px;
+			padding: 6px 40px 6px 3px;
 			outline: none;
 		}
 		.submit{
@@ -46,7 +58,7 @@ header{
 			&:before{
 				content:"\e904";
 				position:absolute;
-				top:9px;
+				top:7px;
 				left:9px;
 				font-size: 0.8em;
 				font-weight: 400;
@@ -56,6 +68,7 @@ header{
 		}
 	}
 	.plan-box{
+		flex-shrink:0;
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -117,47 +130,171 @@ header{
 		display: flex;
 		justify-content: space-between;
 		nav{
-			margin: 13px 0 0 0;
-			ul{
-				display: -webkit-flex;
-				display: -moz-flex;
-				display: -ms-flex;
-				display: -o-flex;
-				display: flex;
-				justify-content: space-between;
-				li{
-					border-left: 1px solid #ed8e53;
-					padding: 0 24px;
-					&:first-child{
-						border-left: none;
-						padding: 0 24px 0 0;
+			margin: 0 0 0 0;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-between;
+			.li_down{
+				position: relative;
+				height: 51px;
+				&:first-child:after{
+					content: "";
+					position:absolute;
+					bottom:18px;
+					right:0;
+					width: 1px;
+					height: 16px;
+					background: none;
+				}
+				&:hover{
+					background: #ff9b4b;
+					color:#fff;
+					border: 5px solid #fff;
+					border-bottom: none;
+					height: 46px;
+					.ul_down{
+						display: block;
+						position:absolute;
+						top:0;
+						left:0;
+						z-index: 20;
 					}
+				}
+				&:after{
+					content: "";
+					position:absolute;
+					bottom:18px;
+					left:0;
+					width: 1px;
+					height: 16px;
+					background: #ed8e53;
 				}
 			}
 			a{
+				display: block;
 				font-size: 1.5em;
-				font-weight: 300;
+				font-weight: 700;
 				font-family: 'agendamedium';
 				color:#fff;
 				text-transform: uppercase;
+				padding: 14px 24px;
 				&:hover{
-					color:#be6ffa;
+					color:#fff;
+					font-weight: 700;
+					padding: 14px 24px;
+				}
+			}
+			.ul_down{
+				display: none;
+				padding: 5px 12px 6px 203px;
+				margin: 50px 0 0 0;
+				background: #fff;
+				width: 265px;
+				position: relative;
+				box-shadow: 2px 3px 11px -2px rgba(0,0,0,0.5);
+				&:after{
+					content: "";
+					position:absolute;
+					bottom:0;
+					right:0;
+					width: 280px;
+					height: 115px;
+					background: url(../images/bg-ul.png) no-repeat;
+					z-index: -1;
+				}
+				li{
+					&:hover{
+						background: #ff9b4b;
+						.image-holder{
+							display: block;
+						}
+					}
+				}
+				.select{
+					background: #ff9b4b;
+					.image-holder{
+						display: block;
+					}
+					a{
+						color:#fff;
+						&:before{
+							content:"\e900";
+							position:absolute;
+							top:5px;
+							left:16px;
+							font-size: 1.3em;
+							font-weight: 300;
+							font-family: 'icomoon';
+							color:#2a4a84;
+						}
+					}
+				}
+				a{
+					border-left: none;
+					position: relative;
+					font-size: 1em;
+					font-weight: 300;
+					font-family: 'agendamedium';
+					color:#2a4a84;
+					text-transform: uppercase;
+					padding: 10px 15px 10px 34px;
+					&:hover{
+						color:#fff;
+					}
+					&:before{
+						content:"\e900";
+						position:absolute;
+						top:5px;
+						left:16px;
+						font-size: 1.3em;
+						font-weight: 300;
+						font-family: 'icomoon';
+						color:#ff9b4b;
+					}
+					&:hover:before{
+						content:"\e900";
+						position:absolute;
+						top:5px;
+						left:16px;
+						font-size: 1.3em;
+						font-weight: 300;
+						font-family: 'icomoon';
+						color:#2a4a84;
+					}
+				}
+				.image-holder{
+					display: none;
+					position:absolute;
+					top:3px;
+					left:5px;
+				}
+			}
+		}
+		.book-holder{
+			position: relative;
+			&:hover{
+				.form-trip{
+					display: block;
 				}
 			}
 		}
 		.book{
+			display: block;
 			font-size: 1.285em;
 			font-weight: 300;
 			font-family: 'agenda-bold';
 			color:#fff;
 			text-transform: uppercase;
 			position: relative;
-			margin: 14px 0 0;
-			padding: 0 0 0 38px;
+			margin: 0 0 0;
+			padding: 16px 0 16px 38px;
 			&:before{
 				content:"\e905";
 				position:absolute;
-				top:-4px;
+				top:10px;
 				left:0;
 				font-size: 1.5em;
 				font-weight: 300;

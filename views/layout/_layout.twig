@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	{% block styles %}
 	    <link rel="stylesheet" href="./css/style.css">
-	    <link rel="stylesheet" href="./css/carousel.css">
-	    <link href="./css/slick.css" rel="stylesheet" />
 	{% endblock %}
-	<script src="./js/require.js" data-main="./js/index"></script>
+	<script 
+		src="./js/require.js" 
+		data-main="{% block jsEntryPoint %}./js/index{% endblock %}">
+	</script>
 	<title>{% block title %}Project{% endblock %}</title>
 </head>
 <body>

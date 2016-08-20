@@ -1,6 +1,7 @@
 'use strict';
  
 var gulp = require('gulp');
+var fs  = require('fs');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var mainBowerFiles = require('gulp-main-bower-files');
@@ -21,6 +22,8 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch('./frontend/stylesheets/**/*.scss', ['sass']);
     gulp.watch('./frontend/javascripts/**/*.js', ['public']);
     gulp.watch('./views/**/*.twig', ['twig']);
+    gulp.watch('./frontend/images', ['images']);
+    gulp.watch('./frontend/fonts', ['fonts']);
 });
 
 gulp.task('main-bower-files',  function() {
@@ -28,7 +31,7 @@ gulp.task('main-bower-files',  function() {
         .pipe(mainBowerFiles(['**/*.js']))
         .pipe(flatten())
         .pipe(logger())
-        .pipe(gulp.dest('./frontend/javascripts'));
+        .pipe(gulp.dest('./public/js'));
 });
 
 gulp.task('sass', function () {
@@ -47,17 +50,23 @@ gulp.task('sass', function () {
 
 gulp.task('public', ['main-bower-files'], function(){
     return gulp.src('./frontend/javascripts/*.js')
-    .pipe(gulp.dest('./public/js'));
+    .pipe(gulp.dest('./public/js'))
+    .pipe(logger())
+    .pipe(browserSync.stream());
 });
 
 gulp.task('images', function(){
     return gulp.src(['./frontend/images/*.jpg', './frontend/images/*.png'])
-    .pipe(gulp.dest('./public/images'));
+    .pipe(gulp.dest('./public/images'))
+    .pipe(logger())
+    .pipe(browserSync.stream());
 });
 
 gulp.task('fonts', function(){
     return gulp.src(['./frontend/fonts/*.eot', './frontend/fonts/*.svg', './frontend/fonts/*.ttf', './frontend/fonts/*.woff'])
-    .pipe(gulp.dest('./public/fonts'));
+    .pipe(gulp.dest('./public/fonts'))
+    .pipe(logger())
+    .pipe(browserSync.stream());
 });
 
 gulp.task('default', ['serve', 'public', 'twig', 'images', 'fonts']);
@@ -65,7 +74,7 @@ gulp.task('default', ['serve', 'public', 'twig', 'images', 'fonts']);
 gulp.task('twig', function () {
 	return gulp.src('./views/pages/*.twig')
 		.pipe(data(function(file) {
-			return require('./fixtures/' + path.basename(file.path, '.twig') + '.json');
+			return JSON.parse(fs.readFileSync('./fixtures/' + path.basename(file.path, '.twig') + '.json'));
 		}))
 		.pipe(twig())
 		.pipe(gulp.dest('./public'))

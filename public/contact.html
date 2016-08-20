@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	
 	    <link rel="stylesheet" href="./css/style.css">
-	    <link rel="stylesheet" href="./css/carousel.css">
-	    <link href="./css/slick.css" rel="stylesheet" />
 	
-	<script src="./js/require.js" data-main="./js/index"></script>
+	<script 
+		src="./js/require.js" 
+		data-main="./js/index">
+	</script>
 	<title>Project</title>
 </head>
 <body>
@@ -16,8 +17,10 @@
 	<div class="container">
 		<div class="header-up">
 			<div class="search-input">
-				<input type="text" id="index" placeholder="Search for...">
-				<button class="submit" type="submit" value="Поиск"> </button>
+				<div class="search-box">
+					<input type="text" id="index" placeholder="Search for...">
+					<button class="submit" type="submit" value="Поиск"> </button>
+				</div>
 			</div>
 			<div class="plan-box">
 				<a href="#">Plan Your Trip</a>
@@ -29,15 +32,59 @@
 		<div class="header-down">
 			<a class="logo" href="index.html"><img src="images/logo.png"  alt=""></a>
 			<nav id="nav">
-				<ul>
-					<li><a href="#">WHAT TO DO</a></li>
-					<li><a href="#">Where to Stay</a></li>
-					<li><a href="#">Trip Ideas</a></li>
-				</ul>
+				<div class="li_down">
+					<a href="#">WHAT TO DO</a>
+					<ul class="ul_down">
+						<li class="select">
+							<a href="#">Studio tours & tv tapings</a>
+							<div class="image-holder">
+								<img src="images/img-06.png"  alt="">
+							</div>
+						</li>
+						<li>
+							<a href="#">shopping</a>
+							<div class="image-holder">
+								<img src="images/img-06.png"  alt="">
+							</div>
+						</li>
+						<li>
+							<a href="#">food & drinks</a>
+							<div class="image-holder">
+								<img src="images/img-06.png"  alt="">
+							</div>
+						</li>
+						<li>
+							<a href="#">hotels</a>
+							<div class="image-holder">
+								<img src="images/img-061.png"  alt="">
+							</div>
+						</li>
+						<li>
+							<a href="#">arts & culture</a>
+							<div class="image-holder">
+								<img src="images/img-06.png"  alt="">
+							</div>
+						</li>
+						<li>
+							<a href="#">parks & recreation</a>
+							<div class="image-holder">
+								<img src="images/img-06.png"  alt="">
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="li_down"><a href="#">Where to Stay</a></div>
+				<div class="li_down"><a href="#">Trip Ideas</a></div>
 			</nav>
-			<a href="#" class="book">
-				BOOK YOUR TRIP
-			</a>
+			<div class="book-holder">
+				<a href="#" class="book">BOOK YOUR TRIP</a>
+				<form action="#" class="form-trip">
+					<h4>BOOK YOUR TRIP</h4>
+					<input id="datepicker" type="text" placeholder="Check in">
+					<input id="datepicker2" type="text" placeholder="Check out">
+					<a href="#">Search</a>
+				</form>
+			</div>
 		</div>
 	</div>
 </header>
@@ -47,7 +94,89 @@
 
 		</section>
 		<footer>
-	footer
+	<div class="footer-top">
+		<div class="container">
+			<div class="sponsors">
+				<div class="image-holder">
+					<img src="images/sponsor1.png"  alt="">
+				</div>
+				<div class="image-holder">
+					<img src="images/sponsor2.png"  alt="">
+				</div>
+				<div class="image-holder">
+					<img src="images/sponsor3.png"  alt="">
+				</div>
+			</div>
+			<ul class="footer-nav">
+				<li>
+					<a href="#">About us</a>
+				</li>
+				<li>
+					<a href="#">Press</a>
+				</li>
+				<li>
+					<a href="#">Contact us</a>
+				</li>
+				<li>
+					<a href="#">What to do</a>
+				</li>
+				<li>
+					<a href="#">Where to stay</a>
+				</li>
+				<li>
+					<a href="#">Trip ideas</a>
+				</li>
+				<li>
+					<a href="#">Plan your trip</a>
+				</li>
+				<li>
+					<a href="#">Plan a meeting</a>
+				</li>
+				<li>
+					<a href="#">Privacy policy</a>
+				</li>
+			</ul>
+			<div class="copyright">
+				<span>© 2013 <a href="#">Visit Burbank</a> / Burbank Hospitality Association. All Rights Reserved.</span>
+			</div>
+		</div>
+	</div>
+	<div class="footer-botton">
+		<div class="container">
+			<div class="lets-connect">
+				<h4>LETS CONNECT</h4>
+				<ul>
+					<li>
+						<a class="facebook" href="#"></a>
+					</li>
+					<li>
+						<a class="linkedin" href="#"></a>
+					</li>
+					<li>
+						<a class="youtube" href="#"></a>
+					</li>
+					<li>
+						<a class="pinterest" href="#"></a>
+					</li>
+					<li>
+						<a class="google-plus" href="#"></a>
+					</li>
+					<li>
+						<a class="Twitter" href="#"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="book-holder">
+				<a href="#" class="book">BOOK YOUR TRIP</a>
+				<form action="#" class="form-trip">
+					<h4>BOOK YOUR TRIP</h4>
+					<input id="datepicker3" type="text" placeholder="Check in">
+					<input id="datepicker4" type="text" placeholder="Check out">
+					<a href="#">Search</a>
+				</form>
+			</div>
+		</div>
+	</div>
 </footer>
 	</div>
 </body>

@@ -80,10 +80,6 @@
     height: 100%;
     min-height: 1px;
 }
-[dir='rtl'] .slick-slide
-{
-    float: right;
-}
 .slick-slide img
 {
     display: block;
@@ -118,12 +114,12 @@
     display: none;
 }
 /* Arrows */
-.slick-prev,
-.slick-next
+.btn-prev2,
+.btn-next2,
+.btn-prev,
+.btn-next
 {
-    position: absolute;
-    bottom:-30px;
-    display: block;
+    display: inline-block;
     width: 20px;
     height: 20px;
     padding: 0;
@@ -137,57 +133,68 @@
     outline: none;
     background: transparent;
 }
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus
+.btn-prev2:hover,
+.btn-prev2:focus,
+.btn-next2:hover,
+.btn-next2:focus,
+.btn-prev:hover,
+.btn-prev:focus,
+.btn-next:hover,
+.btn-next:focus
 {
     color: transparent;
     outline: none;
     background: transparent;
 }
-.slick-prev:hover:before,
-.slick-prev:focus:before,
-.slick-next:hover:before,
-.slick-next:focus:before
+.btn-prev2:hover:before,
+.btn-prev2:focus:before,
+.btn-next2:hover:before,
+.btn-next2:focus:before,
+.btn-prev:hover:before,
+.btn-prev:focus:before,
+.btn-next:hover:before,
+.btn-next:focus:before
 {
     opacity: 1;
 }
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before
+.btn-prev2.slick-disabled:before,
+.btn-next2.slick-disabled:before,
+.btn-prev.slick-disabled:before,
+.btn-next.slick-disabled:before
 {
     opacity: .25;
 }
-
-.slick-prev
+.btn-prev2,
+.btn-prev
 {
     left: 45%;
  
 }
-.slick-prev:before
+.btn-prev2:before,
+.btn-prev:before
 {
     content:"\e901";
     position:absolute;
-    left:8px;
-    top:0;
+    left:-8px;
+    top:16px;
     font-size: 1.9em;
     font-weight: 300;
     font-family: 'icomoon';
     color:#e69865;
     z-index: 25;
 }
-
-.slick-next
+.btn-next2,
+.btn-next
 {
     right: 46%;
 }
-
-.slick-next:before
+.btn-next2:before,
+.btn-next:before
 {
     content:"\e900";
     position:absolute;
     left:0;
-    top:0;
+    top:16px;
     font-size: 1.9em;
     font-weight: 300;
     font-family: 'icomoon';
@@ -196,27 +203,24 @@
 }
 
 /* Dots */
-.slick-dotted.slick-slider
+.slick-dotted .slick-slider
 {
     margin-bottom: 30px;
 }
 
-.slick-dots
+.pagination-mini,
+.slick-pagination
 {
-    position: absolute;
-    bottom: -25px;
-
     display: block;
-
+    background: #ececec;
     width: 100%;
     padding: 0;
     margin: 0;
-
     list-style: none;
-
     text-align: center;
 }
-.slick-dots li
+.pagination-mini li,
+.slick-pagination li
 {
     position: relative;
 
@@ -229,7 +233,8 @@
 
     cursor: pointer;
 }
-.slick-dots li button
+.pagination-mini li button,
+.slick-pagination li button
 {
     font-size: 0;
     line-height: 0;
@@ -246,10 +251,12 @@
     background: transparent;
     box-shadow: inset 1px 2px 6px -1px #5e5e5f;
 }
-.slick-dots li.slick-active button{
+.pagination-mini li.slick-active button,
+.slick-pagination li.slick-active button{
     position: relative;
 }
-.slick-dots li.slick-active button:before{
+.pagination-mini li.slick-active button:before,
+.slick-pagination li.slick-active button:before{
     content: "";
     position:absolute;
     top:2px;
@@ -259,14 +266,16 @@
     height: 10px;
     background: #233e6f;
 }
-.slick-dots li button:hover,
-.slick-dots li button:focus
+.pagination-mini li button:hover,
+.pagination-mini li button:focus,
+.slick-pagination li button:hover,
+.slick-pagination li button:focus
 {
     position: relative;
     outline: none;
 }
-.slick-dots li button:hover:before
-{
+.pagination-mini li button:hover:before,
+.slick-pagination li button:hover:before{
     opacity: 0.7;
     content: "";
     position:absolute;

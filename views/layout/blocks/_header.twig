@@ -2,8 +2,10 @@
 	<div class="container">
 		<div class="header-up">
 			<div class="search-input">
-				<input type="text" id="index" placeholder="Search for...">
-				<button class="submit" type="submit" value="Поиск"> </button>
+				<div class="search-box">
+					<input type="text" id="index" placeholder="Search for...">
+					<button class="submit" type="submit" value="Поиск"> </button>
+				</div>
 			</div>
 			<div class="plan-box">
 				<a href="#">Plan Your Trip</a>
@@ -15,15 +17,59 @@
 		<div class="header-down">
 			<a class="logo" href="index.html"><img src="images/logo.png"  alt=""></a>
 			<nav id="nav">
-				<ul>
-					<li><a href="#">WHAT TO DO</a></li>
-					<li><a href="#">Where to Stay</a></li>
-					<li><a href="#">Trip Ideas</a></li>
-				</ul>
+				<div class="li_down">
+					<a href="#">WHAT TO DO</a>
+					<ul class="ul_down">
+						<li class="select">
+							<a href="#">Studio tours & tv tapings</a>
+							<div class="image-holder">
+								<img src="images/img-06.png"  alt="">
+							</div>
+						</li>
+						<li>
+							<a href="#">shopping</a>
+							<div class="image-holder">
+								<img src="images/img-06.png"  alt="">
+							</div>
+						</li>
+						<li>
+							<a href="#">food & drinks</a>
+							<div class="image-holder">
+								<img src="images/img-06.png"  alt="">
+							</div>
+						</li>
+						<li>
+							<a href="#">hotels</a>
+							<div class="image-holder">
+								<img src="images/img-061.png"  alt="">
+							</div>
+						</li>
+						<li>
+							<a href="#">arts & culture</a>
+							<div class="image-holder">
+								<img src="images/img-06.png"  alt="">
+							</div>
+						</li>
+						<li>
+							<a href="#">parks & recreation</a>
+							<div class="image-holder">
+								<img src="images/img-06.png"  alt="">
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="li_down"><a href="#">Where to Stay</a></div>
+				<div class="li_down"><a href="#">Trip Ideas</a></div>
 			</nav>
-			<a href="#" class="book">
-				BOOK YOUR TRIP
-			</a>
+			<div class="book-holder">
+				<a href="#" class="book">BOOK YOUR TRIP</a>
+				<form action="#" class="form-trip">
+					<h4>BOOK YOUR TRIP</h4>
+					<input id="datepicker" type="text" placeholder="Check in">
+					<input id="datepicker2" type="text" placeholder="Check out">
+					<a href="#">Search</a>
+				</form>
+			</div>
 		</div>
 	</div>
 </header>

@@ -1,8 +1,9 @@
-.slider-main{
+.slider-main,
+.slider2-main{
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
-	padding: 0 0 50px;
+	padding: 0;
 	li{
 		position: relative;
 	}
@@ -72,6 +73,76 @@
 			    font-family: 'icomoon';
 			    color:#e69865;
 			}
+		}
+	}
+}
+.mini-gallery{
+	li{
+		outline: none;
+	}
+	.image-hold{
+		margin: 0 0 10px;
+		position: relative;
+		&:after{
+			content: "";
+			position:absolute;
+			top:-33px;
+			left:0;
+			width: 250px;
+			height: 148px;
+			background: url(../images/bg-see.png) no-repeat;
+		}
+	}
+	h3{
+		font-size: 2em;
+		font-weight: 300;
+		font-family: 'agenda-bold';
+		color:#f7955b;
+		margin:0 0 10px;
+	}
+	strong{
+		display: block;
+		font-size: 1.286em;
+		font-weight: 400;
+		font-family: 'HelveticaLTStd-Bold';
+		color:#3762af;
+		margin: 0 0 10px;
+	}
+	p{
+		font-size: 1em;
+		font-weight: 400;
+		font-family: 'HelveticaLTStd-Roman';
+		color:#4e4e4e;
+		margin: 0 0 20px;
+	}
+	.slick-mini{
+		border-bottom: 1px solid #c7c7c7;
+		padding: 0 0 30px;
+	}
+	.slick-mini a{
+		display: inline-block;
+		font-size: 0.86em;
+		font-weight: 300;
+		font-family: 'HelveticaLTStd-Roman';
+		color:#fff;
+		text-transform: uppercase;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+		padding: 7px 28px;
+		border: 1px solid #ed7310;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ec700c+1,ffba5f+100 */
+		background: rgb(236,112,12); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(236,112,12,1) 1%, rgba(255,186,95,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(236,112,12,1) 1%,rgba(255,186,95,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(236,112,12,1) 1%,rgba(255,186,95,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec700c', endColorstr='#ffba5f',GradientType=0 ); /* IE6-9 */
+		&:hover{
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffba5f+0,ec700c+100 */
+			background: rgb(255,186,95); /* Old browsers */
+			background: -moz-linear-gradient(top,  rgba(255,186,95,1) 0%, rgba(236,112,12,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  rgba(255,186,95,1) 0%,rgba(236,112,12,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  rgba(255,186,95,1) 0%,rgba(236,112,12,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffba5f', endColorstr='#ec700c',GradientType=0 ); /* IE6-9 */
+
 		}
 	}
 }
