@@ -14,41 +14,30 @@ requirejs([
 	'jquery.openclose',
 	'jquery-ui'
 ], function($) {
-    $('.slick-slider').slick({
+    $('.galleryTop').slick({
     	dots: true,
-    	appendDots:'.slick-pagination',
-    	prevArrow:'.btn-prev',
-   		nextArrow:'.btn-next'
+    	appendDots: '.pagination_top',
+    	prevArrow: '.btn_prev_top',
+   		nextArrow: '.btn_next_top'
+  	});
+  	$('.galleryBottom').slick({
+    	dots: true,
+    	appendDots: '.pagination_bottom',
+    	prevArrow: '.btn_prev_bottom',
+   		nextArrow: '.btn_next_bottom'
   	});
   	$('.slick-mini').slick({
-    	appendDots:'.pagination-mini',
-    	prevArrow:'.btn-prev2',
-   		nextArrow:'.btn-next2'
+  		dots: true,
+    	appendDots:'.pagination_mini',
+    	prevArrow:'.btn_prev_mini',
+   		nextArrow:'.btn_next_mini'
   	});
     $('.toggle-block').openClose({
     	activeClass:'active',
     	opener:'.opener',
     	slider:'.slide'
     });
-    $('#datepicker').datepicker({
- 		showOn: "button",
-		buttonImage: "../images/picker.png",
-		buttonImageOnly: true,
-		buttonText: "Select date"
-    });
-    $('#datepicker2').datepicker({
- 		showOn: "button",
-		buttonImage: "../images/picker.png",
-		buttonImageOnly: true,
-		buttonText: "Select date"
-    });
-    $('#datepicker3').datepicker({
- 		showOn: "button",
-		buttonImage: "../images/picker.png",
-		buttonImageOnly: true,
-		buttonText: "Select date"
-    });
-    $('#datepicker4').datepicker({
+    $('#datepicker, #datepicker2, #datepicker3, #datepicker4').datepicker({
  		showOn: "button",
 		buttonImage: "../images/picker.png",
 		buttonImageOnly: true,

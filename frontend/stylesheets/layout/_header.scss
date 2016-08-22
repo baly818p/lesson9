@@ -152,9 +152,8 @@ header{
 				&:hover{
 					background: #ff9b4b;
 					color:#fff;
-					border: 5px solid #fff;
 					border-bottom: none;
-					height: 46px;
+					box-shadow: inset 0 0 0 5px rgba(255,255,255,1);
 					.ul_down{
 						display: block;
 						position:absolute;
@@ -213,24 +212,10 @@ header{
 						}
 					}
 				}
-				.select{
-					background: #ff9b4b;
-					.image-holder{
-						display: block;
-					}
-					a{
-						color:#fff;
-						&:before{
-							content:"\e900";
-							position:absolute;
-							top:5px;
-							left:16px;
-							font-size: 1.3em;
-							font-weight: 300;
-							font-family: 'icomoon';
-							color:#2a4a84;
-						}
-					}
+				.image-holder-top{
+					position:absolute;
+					top:3px;
+					left:5px;
 				}
 				a{
 					border-left: none;
@@ -253,6 +238,7 @@ header{
 						font-weight: 300;
 						font-family: 'icomoon';
 						color:#ff9b4b;
+						transition: transform 0.3s ease-out;
 					}
 					&:hover:before{
 						content:"\e900";
@@ -263,6 +249,8 @@ header{
 						font-weight: 300;
 						font-family: 'icomoon';
 						color:#2a4a84;
+						transform: rotate(90deg);
+						transition: transform 0.3s linear;
 					}
 				}
 				.image-holder{

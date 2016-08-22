@@ -114,10 +114,12 @@
     display: none;
 }
 /* Arrows */
-.btn-prev2,
-.btn-next2,
-.btn-prev,
-.btn-next
+.btn_prev_mini,
+.btn_next_mini,
+.btn_prev_bottom,
+.btn_next_bottom,
+.btn_prev_top,
+.btn_next_top
 {
     display: inline-block;
     width: 20px;
@@ -133,45 +135,57 @@
     outline: none;
     background: transparent;
 }
-.btn-prev2:hover,
-.btn-prev2:focus,
-.btn-next2:hover,
-.btn-next2:focus,
-.btn-prev:hover,
-.btn-prev:focus,
-.btn-next:hover,
-.btn-next:focus
+.btn_prev_mini:hover,
+.btn_prev_mini:focus,
+.btn_next_mini:hover,
+.btn_next_mini:focus,
+.btn_prev_bottom:hover,
+.btn_prev_bottom:focus,
+.btn_next_bottom:hover,
+.btn_next_bottom:focus,
+.btn_prev_top:hover,
+.btn_prev_top:focus,
+.btn_next_top:hover,
+.btn_next_top:focus
 {
     color: transparent;
     outline: none;
     background: transparent;
 }
-.btn-prev2:hover:before,
-.btn-prev2:focus:before,
-.btn-next2:hover:before,
-.btn-next2:focus:before,
-.btn-prev:hover:before,
-.btn-prev:focus:before,
-.btn-next:hover:before,
-.btn-next:focus:before
+.btn_prev_mini:hover:before,
+.btn_prev_mini:focus:before,
+.btn_next_mini:hover:before,
+.btn_next_mini:focus:before,
+.btn_prev_bottom:hover:before,
+.btn_prev_bottom:focus:before,
+.btn_next_bottom:hover:before,
+.btn_next_bottom:focus:before,
+.btn_prev_top:hover:before,
+.btn_prev_top:focus:before,
+.btn_next_top:hover:before,
+.btn_next_top:focus:before
 {
     opacity: 1;
 }
-.btn-prev2.slick-disabled:before,
-.btn-next2.slick-disabled:before,
-.btn-prev.slick-disabled:before,
-.btn-next.slick-disabled:before
+.btn_prev_mini.slick-disabled:before,
+.btn_next_mini.slick-disabled:before,
+.btn_prev_bottom.slick-disabled:before,
+.btn_next_bottom.slick-disabled:before,
+.btn_prev_top.slick-disabled:before,
+.btn_next_top.slick-disabled:before
 {
     opacity: .25;
 }
-.btn-prev2,
-.btn-prev
+.btn_prev_mini,
+.btn_prev_bottom,
+.btn_prev_top
 {
     left: 45%;
  
 }
-.btn-prev2:before,
-.btn-prev:before
+.btn_prev_mini:before,
+.btn_prev_bottom:before,
+.btn_prev_top:before
 {
     content:"\e901";
     position:absolute;
@@ -183,13 +197,15 @@
     color:#e69865;
     z-index: 25;
 }
-.btn-next2,
-.btn-next
+.btn_next_mini,
+.btn_next_bottom,
+.btn_next_top
 {
     right: 46%;
 }
-.btn-next2:before,
-.btn-next:before
+.btn_next_mini:before,
+.btn_next_bottom:before,
+.btn_next_top:before
 {
     content:"\e900";
     position:absolute;
@@ -203,24 +219,27 @@
 }
 
 /* Dots */
+.gal-pagination{
+    text-align: center;
+    background: #ececec;
+}
 .slick-dotted .slick-slider
 {
     margin-bottom: 30px;
 }
 
-.pagination-mini,
-.slick-pagination
-{
-    display: block;
-    background: #ececec;
-    width: 100%;
+.pagination_mini,
+.pagination_top,
+.pagination_bottom{
+    display: inline-block;
     padding: 0;
     margin: 0;
     list-style: none;
     text-align: center;
 }
-.pagination-mini li,
-.slick-pagination li
+.pagination_mini li,
+.pagination_top li,
+.pagination_bottom li
 {
     position: relative;
 
@@ -233,8 +252,9 @@
 
     cursor: pointer;
 }
-.pagination-mini li button,
-.slick-pagination li button
+.pagination_mini li button,
+.pagination_top li button,
+.pagination_bottom li button
 {
     font-size: 0;
     line-height: 0;
@@ -251,12 +271,14 @@
     background: transparent;
     box-shadow: inset 1px 2px 6px -1px #5e5e5f;
 }
-.pagination-mini li.slick-active button,
-.slick-pagination li.slick-active button{
+.pagination_mini li.slick-active button,
+.pagination_top li.slick-active button,
+.pagination_bottom li.slick-active button{
     position: relative;
 }
-.pagination-mini li.slick-active button:before,
-.slick-pagination li.slick-active button:before{
+.pagination_mini li.slick-active button:before,
+.pagination_top li.slick-active button:before,
+.pagination_bottom li.slick-active button:before{
     content: "";
     position:absolute;
     top:2px;
@@ -266,16 +288,18 @@
     height: 10px;
     background: #233e6f;
 }
-.pagination-mini li button:hover,
-.pagination-mini li button:focus,
-.slick-pagination li button:hover,
-.slick-pagination li button:focus
-{
+.pagination_mini li button:hover,
+.pagination_mini li button:focus,
+.pagination_top li button:hover,
+.pagination_top li button:focus,
+.pagination_bottom li button:hover,
+.pagination_bottom li button:focus{
     position: relative;
     outline: none;
 }
-.pagination-mini li button:hover:before,
-.slick-pagination li button:hover:before{
+.pagination_mini li button:hover:before,
+.pagination_top li button:hover:before,
+.pagination_bottom li button:hover:before{
     opacity: 0.7;
     content: "";
     position:absolute;

@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	outline: none;
 }
 ol, ul {
 	list-style: none;
@@ -48,4 +49,5 @@ table {
 }
 a{
 	text-decoration: none;
+	outline: none;
 }

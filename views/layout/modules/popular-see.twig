@@ -1,7 +1,7 @@
 <div class="popular-see">
 	<div class="container">
 		<div class="be-seen">
-			{% include 'gallery-mini.twig' %}
+			{% include 'gallery-mini.twig' with {gallery: includes.galleryMini}%}
 		</div>
 		<div class="popular">
 			<h4>Popular Must See Attractions</h4>

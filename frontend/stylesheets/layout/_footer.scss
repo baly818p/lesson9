@@ -48,8 +48,14 @@ footer{
 			}
 		}
 	}
-	.footer-botton{
+	
+}
+.footer-botton{
 		background: #5e256a;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
 		.container{
 			display: flex;
 			justify-content: space-between;
@@ -83,8 +89,13 @@ footer{
 				width: 17px;
 				height: 17px;
 				border-radius: 2px;
+				transition: background 0.3s ease-out;
 				&:hover{
-					background: #aa4dbd;
+					background: #fff;
+					transition: background 0.3s ease-out;
+				}
+				&:hover:before{
+					color:#aa4dbd;
 				}
 			}
 			.facebook{
@@ -200,4 +211,3 @@ footer{
 			}
 		}
 	}
-}

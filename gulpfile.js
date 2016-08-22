@@ -22,7 +22,8 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch('./frontend/stylesheets/**/*.scss', ['sass']);
     gulp.watch('./frontend/javascripts/**/*.js', ['public']);
     gulp.watch('./views/**/*.twig', ['twig']);
-    gulp.watch('./frontend/images', ['images']);
+    gulp.watch('./fixtures/**/*.json', ['twig']);
+    gulp.watch('./frontend/images/*.*', ['images']);
     gulp.watch('./frontend/fonts', ['fonts']);
 });
 

@@ -17,7 +17,6 @@
 		width: 315px;
 		height: 428px;
 		background: url(../images/bg-feature1.png) no-repeat;
-		z-index: 1;
 	}
 	&:before{
 		content: "";
@@ -29,7 +28,6 @@
 		width: 118px;
 		height: 428px;
 		background: url(../images/bg-feature2.png) no-repeat;
-		z-index: 1;
 	}
 	.container{
 		max-width: 892px;

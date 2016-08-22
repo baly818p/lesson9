@@ -1,17 +1,12 @@
 {% extends '../layout/_layout.twig' %}
 
-{% block styles %}
-    {{ parent() }}
-    <link rel="stylesheet" href="">
-{% endblock %}
-
 {% block title %}
  	Burbank
 {% endblock %}
 
 {% block content %}
-{% include '../layout/modules/gallery.twig' %}
+{% include '../layout/modules/gallery.twig' with {gallery: includes.galleryTop} %}
 {% include '../layout/modules/popular-see.twig' %}
-{% include '../layout/modules/gallery2.twig' %}
+{% include '../layout/modules/gallery.twig' with {gallery: includes.galleryBottom} %}
 {% include '../layout/modules/featured-trip.twig' %}
 {% endblock %}

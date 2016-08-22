@@ -7,10 +7,40 @@
 	],
 	"includes": {
 		"galleryTop": {
-			"text": "first text"
+			"class": "galleryTop",
+			"pagination": "pagination_top",
+			"btn_prev": "btn_prev_top",
+			"btn_next": "btn_next_top",
+			"slides": [
+			    {"imageUrl": "promo.jpg", "strong": "Rolling… and action1", "spanTop": "Check-in1 at the perfect place to check out movie and TV magic", "spanDown": "WHAT1 TO DO:", "a": "STUDIO1 TOURS"},
+			    {"imageUrl": "promo2.jpg", "strong": "Rolling… and action2", "spanTop": "Check-in2 at the perfect place to check out movie and TV magic", "spanDown": "WHAT2 TO DO:", "a": "STUDIO2 TOURS"},
+			    {"imageUrl": "promo.jpg", "strong": "Rolling… and action3", "spanTop": "Check-in3 at the perfect place to check out movie and TV magic", "spanDown": "WHAT3 TO DO:", "a": "STUDIO3 TOURS"},
+			    {"imageUrl": "promo2.jpg", "strong": "Rolling… and action4", "spanTop": "Check-in4 at the perfect place to check out movie and TV magic", "spanDown": "WHAT4 TO DO:", "a": "STUDIO4 TOURS"}
+			]
 		},
-		"galleryBotton": {
-			"text": "second text"
+		"galleryBottom": {
+			"class": "galleryBottom",
+			"pagination": "pagination_bottom",
+			"btn_prev": "btn_prev_bottom",
+			"btn_next": "btn_next_bottom",
+			"slides": [
+			    {"imageUrl": "promo2.jpg", "strong": "LEAVE THE KIDS AT HOME1", "spanTop": "Lorem1 ipsum delor set imet supium tuna cakes", "spanDown": "trip ideas:", "a": "Romantic1 weekends"},
+			    {"imageUrl": "promo.jpg", "strong": "LEAVE THE KIDS AT HOME2", "spanTop": "Lorem2 ipsum delor set imet supium tuna cakes", "spanDown": "trip ideas:", "a": "Romantic2 weekends"},
+			    {"imageUrl": "promo2.jpg", "strong": "LEAVE THE KIDS AT HOME3", "spanTop": "Lorem3 ipsum delor set imet supium tuna cakes", "spanDown": "trip ideas:", "a": "Romantic3 weekends"},
+			    {"imageUrl": "promo.jpg", "strong": "LEAVE THE KIDS AT HOME4", "spanTop": "Lorem4 ipsum delor set imet supium tuna cakes", "spanDown": "trip ideas:", "a": "Romantic4 weekends"}
+			]
+		},
+		"galleryMini": {
+			"class": "galleryMini",
+			"pagination": "pagination_mini",
+			"btn_prev": "btn_prev_mini",
+			"btn_next": "btn_next_mini",
+			"slides": [
+			    {"imageUrl": "gal-01.png", "h3": "Russian Jazz1 Ballet Valery1", "strong": "Sit1 amet consectetuer adipiscing elit sed", "p": "Et1 iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait. Facilisis at vero."},
+				{"imageUrl": "gal-01.png", "h3": "Russian Jazz2 Ballet Valery1", "strong": "Sit2 amet consectetuer adipiscing elit sed", "p": "Et2 iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait. Facilisis at vero."},
+				{"imageUrl": "gal-01.png", "h3": "Russian Jazz3 Ballet Valery1", "strong": "Sit3 amet consectetuer adipiscing elit sed", "p": "Et3 iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait. Facilisis at vero."},
+				{"imageUrl": "gal-01.png", "h3": "Russian Jazz4 Ballet Valery1", "strong": "Sit4 amet consectetuer adipiscing elit sed", "p": "Et4 iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait. Facilisis at vero."}
+			]
 		}
 	}
 }

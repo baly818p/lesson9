@@ -1,62 +1,23 @@
 <div class="mini-gallery">
-	<ul class="slick-mini">
-		<li>
-			<div class="image-hold">
-				<img src="images/see&be.png"  alt="">
-			</div>
-			<div class="image-holder">
-				<img src="images/gal-01.png"  alt="">
-			</div>
-			<h3>Russian Jazz Ballet Valery</h3>
-			<strong>Sit amet consectetuer adipiscing elit sed</strong>
-			<p>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait. Facilisis at vero.</p>
-			<a href="#">LEARN MORE    &gt;</a>
-		</li>
-		<li>
-			<div class="image-hold">
-				<img src="images/see&be.png"  alt="">
-			</div>
-			<div class="image-holder">
-				<img src="images/gal-01.png"  alt="">
-			</div>
-			<h3>Russian Jazz Ballet Valery</h3>
-			<strong>Sit amet consectetuer adipiscing elit sed</strong>
-			<p>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait. Facilisis at vero.</p>
-			<a href="#">LEARN MORE    &gt;</a>
-		</li>
-		<li>
-			<div class="image-hold">
-				<img src="images/see&be.png"  alt="">
-			</div>
-			<div class="image-holder">
-				<img src="images/gal-01.png"  alt="">
-			</div>
-			<h3>Russian Jazz Ballet Valery</h3>
-			<strong>Sit amet consectetuer adipiscing elit sed</strong>
-			<p>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait. Facilisis at vero.</p>
-			<a href="#">LEARN MORE    &gt;</a>
-		</li>
-		<li>
-			<div class="image-hold">
-				<img src="images/see&be.png"  alt="">
-			</div>
-			<div class="image-holder">
-				<img src="images/gal-01.png"  alt="">
-			</div>
-			<h3>Russian Jazz Ballet Valery</h3>
-			<strong>Sit amet consectetuer adipiscing elit sed</strong>
-			<p>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait. Facilisis at vero.</p>
-			<a href="#">LEARN MORE    &gt;</a>
-		</li>
+	<ul class="slick-mini {{galleryMini}}">
+		{% for item in gallery.slides %}
+			<li>
+				<div class="image-hold">
+					<img src="images/see&be.png"  alt="">
+				</div>
+				<div class="image-holder">
+					<img src="images/{{ item.imageUrl }}"  alt="">
+				</div>
+				<h3>{{item.h3}}</h3>
+				<strong>{{item.strong}}</strong>
+				<p>{{item.p}}</p>
+				<a href="#">LEARN MORE    &gt;</a>
+			</li>
+		{% endfor %}
 	</ul>
-	<ul class="pagination-mini">
-		<ul>
-			<a class="btn-prev2" href="#"></a>
-			<li><button type="button">1</button></li>
-			<li><button type="button">2</button></li>
-			<li><button type="button">3</button></li>
-			<li><button type="button">4</button></li>
-			<a class="btn-next2" href="#"></a>
-		</ul>
-	</ul>
+	<div class="gal-pagination">
+		<a class="{{gallery.btn_prev}}" href="#"></a>
+		<div class="slick-pagination {{gallery.pagination}}"></div>
+		<a class="{{gallery.btn_next}}" href="#"></a>
+	</div>
 </div>

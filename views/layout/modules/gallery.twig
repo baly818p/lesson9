@@ -1,80 +1,26 @@
 <div class="slider-main">
-	<ul class="slick-slider">
-		<li>
+	<ul class="slick-slider {{ gallery.class }}">
+	{% for item in gallery.slides %}
+	    <li>
 			<div class="image-holder">
-				<img src="images/promo.jpg"  alt="">
+				<img src="images/{{ item.imageUrl }}"  alt="">
 			</div>
 			<div class="text-box">
 				<div class="text-up">
-					<strong>Rolling… and action1</strong>
-					<span>Check-in at the perfect place to check out movie and TV magic</span>
+					<strong>{{item.strong}}</strong>
+					<span>{{item.spanTop}}</span>
 				</div>
 				<div class="text-down">
-					<span>WHAT TO DO:</span>
-					<a href="#">STUDIO TOURS</a>
+					<span>{{item.spanDown}}</span>
+					<a href="#">{{item.a}}</a>
 				</div>
 			</div>
 		</li>
-		<li>
-			<div class="image-holder">
-				<img src="images/promo.jpg"  alt="">
-			</div>
-			<div class="text-box">
-				<div class="text-up">
-					<strong>Rolling… and action2</strong>
-					<span>Check-in at the perfect place to check out movie and TV magic</span>
-				</div>
-				<div class="text-down">
-					<span>WHAT TO DO:</span>
-					<a href="#">STUDIO TOURS</a>
-				</div>
-			</div>
-		</li>
-		<li>
-			<div class="image-holder">
-				<img src="images/promo.jpg"  alt="">
-			</div>
-			<div class="text-box">
-				<div class="text-up">
-					<strong>Rolling… and action3</strong>
-					<span>Check-in at the perfect place to check out movie and TV magic</span>
-				</div>
-				<div class="text-down">
-					<span>WHAT TO DO:</span>
-					<a href="#">STUDIO TOURS</a>
-				</div>
-			</div>
-		</li>
-		<li>
-			<div class="image-holder">
-				<img src="images/promo.jpg"  alt="">
-			</div>
-			<div class="text-box">
-				<div class="text-up">
-					<strong>Rolling… and action4</strong>
-					<span>Check-in at the perfect place to check out movie and TV magic</span>
-				</div>
-				<div class="text-down">
-					<span>WHAT TO DO:</span>
-					<a href="#">STUDIO TOURS</a>
-				</div>
-			</div>
-		</li>
+	{% endfor %}
 	</ul>
-	<ul class="slick-pagination">
-		<a class="btn-prev" href="#"></a>
-		<li id="slick-slide00">
-			<button type="button">1</button>
-		</li>
-		<li id="slick-slide01">
-			<button type="button">2</button>
-		</li>
-		<li id="slick-slide02">
-			<button type="button">3</button>
-		</li>
-		<li id="slick-slide03">
-			<button type="button">4</button>
-		</li>
-		<a class="btn-next" href="#"></a>
-	</ul>
+	<div class="gal-pagination">
+		<a class="{{gallery.btn_prev}}" href="#"></a>
+		<div class="slick-pagination {{gallery.pagination}}"></div>
+		<a class="{{gallery.btn_next}}" href="#"></a>
+	</div>
 </div>
