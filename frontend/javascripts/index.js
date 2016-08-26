@@ -54,6 +54,13 @@ requirejs([
 		animSpeed: 150,
 		slider:'.form-footer'
 	});
+  $('.nav-block').openClose({
+    activeClass:'active',
+    opener:'.opener',
+    hideOnClickOutside: true,
+    animSpeed: 150,
+    slider:'.nav'
+  });
     $('#datepicker, #datepicker2, #datepicker3, #datepicker4').datepicker({
  		
     });

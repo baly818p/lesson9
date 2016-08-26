@@ -166,15 +166,22 @@
 		}
 		.nav{
 			margin: 0;
-			display: flex;
+			display: flex !important;
+			position: static !important;
 			justify-content: space-between;
 			@include media("<tablet") {
-				position:absolute;
+				display: block !important;
+				position:absolute !important;
 				top:51px;
 				right:0;
 				flex-direction: column;
 				background: #662d91;
 				z-index: 25;
+			}
+			.js-slide-hidden{
+				@include media("<tablet") {
+					display: flex;
+				}
 			}
 			.li_down{
 				position: relative;
