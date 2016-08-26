@@ -12,7 +12,8 @@ requirejs([
 	'domReady',
 	'slick',
 	'jquery.openclose',
-	'jquery-ui'
+	'jquery-ui',
+	'popups'
 ], function($) {
     $('.galleryTop').slick({
     	dots: true,
@@ -34,13 +35,27 @@ requirejs([
   	});
     $('.toggle-block').openClose({
     	activeClass:'active',
+    	hideOnClickOutside: true,
+    	animSpeed: 200,
     	opener:'.opener',
     	slider:'.slide'
     });
+	$('.book-holder').openClose({
+		activeClass:'active',
+		opener:'.opener',
+		hideOnClickOutside: true,
+		animSpeed: 150,
+		slider:'.form-trip'
+	});
+	$('.book-footer').openClose({
+		activeClass:'active',
+		opener:'.opener',
+		hideOnClickOutside: true,
+		animSpeed: 150,
+		slider:'.form-footer'
+	});
     $('#datepicker, #datepicker2, #datepicker3, #datepicker4').datepicker({
- 		showOn: "button",
-		buttonImage: "../images/picker.png",
-		buttonImageOnly: true,
-		buttonText: "Select date"
+ 		
     });
+
 });

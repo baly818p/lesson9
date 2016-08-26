@@ -2,9 +2,10 @@ body{
 	font: 14px/1.1 'HelveticaLTStd-Roman', sans-serif;
 }
 .wrapper{
-	min-width: 892px;
+	min-width: 320px;
+	overflow: hidden;
 }
 .container{
-	max-width: 892px;
 	margin: 0 auto;
+	padding: 0 10px;
 }

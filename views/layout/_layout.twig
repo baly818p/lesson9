@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	{% block styles %}
 	    <link rel="stylesheet" href="./css/style.css">
 	{% endblock %}
@@ -35,7 +36,7 @@
 				<li>
 					<a class="youtube" href="#"></a>
 				</li>
-				<li>
+				<li class="pinterest-li">
 					<a class="pinterest" href="#"></a>
 				</li>
 				<li>
@@ -46,13 +47,21 @@
 				</li>
 			</ul>
 		</div>
-		<div class="book-holder">
-			<a href="#" class="book">BOOK YOUR TRIP</a>
-			<form action="#" class="form-trip">
-				<h4>BOOK YOUR TRIP</h4>
-				<input id="datepicker3" type="text" placeholder="Check in">
-				<input id="datepicker4" type="text" placeholder="Check out">
-				<a href="#">Search</a>
+		<div class="book-footer">
+			<a href="#" class="book opener">Book your trip</a>
+			<form action="#" class="form-footer">
+				<fieldset>
+					<h4>BOOK YOUR TRIP</h4>
+					<div class="row">
+						<input id="datepicker3" type="text" required>
+						<label for="datepicker3"><span>Check in</span></label>
+					</div>
+					<div class="row">
+						<input id="datepicker4" type="text" required>
+						<label for="datepicker4"><span>Check out</span></label>
+					</div>
+					<a href="#">Search</a>
+				</fieldset>
 			</form>
 		</div>
 	</div>

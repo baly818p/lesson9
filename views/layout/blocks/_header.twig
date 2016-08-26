@@ -1,4 +1,4 @@
-<header>
+<header class="header">
 	<div class="container">
 		<div class="header-up">
 			<div class="search-input">
@@ -16,61 +16,73 @@
 		</div>
 		<div class="header-down">
 			<a class="logo" href="index.html"><img src="images/logo.png"  alt=""></a>
-			<nav id="nav">
-				<div class="li_down">
-					<a href="#">WHAT TO DO</a>
-					<ul class="ul_down">
-						<div class="image-holder-top">
-							<img src="images/img-06.png"  alt="">
-						</div>
-						<li>
-							<a href="#">Studio tours & tv tapings</a>
-							<div class="image-holder">
+			<div class="nav-block">
+				<a class="menu420 opener" href="#">MENU</a>
+				<nav class="nav">
+					<div class="li_down">
+						<a href="#">WHAT TO DO</a>
+						<ul class="ul_down">
+							<div class="image-holder-top">
 								<img src="images/img-06.png"  alt="">
 							</div>
-						</li>
-						<li>
-							<a href="#">shopping</a>
-							<div class="image-holder">
-								<img src="images/img-06.png"  alt="">
-							</div>
-						</li>
-						<li>
-							<a href="#">food & drinks</a>
-							<div class="image-holder">
-								<img src="images/img-06.png"  alt="">
-							</div>
-						</li>
-						<li>
-							<a href="#">hotels</a>
-							<div class="image-holder">
-								<img src="images/img-061.png"  alt="">
-							</div>
-						</li>
-						<li>
-							<a href="#">arts & culture</a>
-							<div class="image-holder">
-								<img src="images/img-06.png"  alt="">
-							</div>
-						</li>
-						<li>
-							<a href="#">parks & recreation</a>
-							<div class="image-holder">
-								<img src="images/img-06.png"  alt="">
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div class="li_down"><a href="#">Where to Stay</a></div>
-				<div class="li_down"><a href="#">Trip Ideas</a></div>
-			</nav>
+							<li>
+								<a href="#">Studio tours & tv tapings</a>
+								<div class="image-holder">
+									<img src="images/img-06.png"  alt="">
+								</div>
+							</li>
+							<li>
+								<a href="#">shopping</a>
+								<div class="image-holder">
+									<img src="images/img-06.png"  alt="">
+								</div>
+							</li>
+							<li>
+								<a href="#">food & drinks</a>
+								<div class="image-holder">
+									<img src="images/img-06.png"  alt="">
+								</div>
+							</li>
+							<li>
+								<a href="#">hotels</a>
+								<div class="image-holder">
+									<img src="images/img-061.png"  alt="">
+								</div>
+							</li>
+							<li>
+								<a href="#">arts & culture</a>
+								<div class="image-holder">
+									<img src="images/img-06.png"  alt="">
+								</div>
+							</li>
+							<li>
+								<a href="#">parks & recreation</a>
+								<div class="image-holder">
+									<img src="images/img-06.png"  alt="">
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="li_down"><a href="#">Where to Stay</a></div>
+					<div class="li_down"><a href="#">Trip Ideas</a></div>
+				</nav>
+			</div>
+
 			<div class="book-holder">
-				<a href="#" class="book">BOOK YOUR TRIP</a>
+				<a href="#" class="book opener">BOOK YOUR TRIP</a>
 				<form action="#" class="form-trip">
-					<h4>BOOK YOUR TRIP</h4>
-					<input id="datepicker" type="text" placeholder="Check in">
-					<input id="datepicker2" type="text" placeholder="Check out">
-					<a href="#">Search</a>
+					<fieldset>
+						<h4>BOOK YOUR TRIP</h4>
+						<div class="row">
+							<input id="datepicker" type="text" required>
+							<label for="datepicker"><span>Check in</span></label>
+						</div>
+						<div class="row">
+							<input id="datepicker2" type="text" required>
+							<label for="datepicker2"><span>Check out</span></label>
+						</div>
+						<a href="#">Search</a>
+					</fieldset>
 				</form>
 			</div>
 		</div>

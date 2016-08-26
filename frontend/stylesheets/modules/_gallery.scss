@@ -26,11 +26,12 @@
 		flex-direction: column;
 		align-items: center;
 		margin: 0 0 8px;
+		text-align: center;
 		strong{
 			display: block;
 			font-size: 2.57em;
 			font-weight: 300;
-			font-family: 'agendamedium';
+			font-family: $secondFamily;
 			color:#fff;
 			text-transform: uppercase;
 			text-shadow: 2px 1px 5px #7c7171;
@@ -38,9 +39,10 @@
 		span{
 			font-size: 1.286em;
 			font-weight: 300;
-			font-family: 'agendamedium';
+			font-family: $secondFamily;
 			color:#fff;
 			text-shadow: 2px 1px 5px #7c7171;
+			padding: 0 10px;
 		}
 	}
 	.text-down{
@@ -50,7 +52,7 @@
 		span{
 			font-size: 1.5em;
 			font-weight: 300;
-			font-family: 'agendamedium';
+			font-family: $secondFamily;
 			color:#fff;
 			text-transform: uppercase;
 			text-shadow: 2px 1px 5px #7c7171;
@@ -59,7 +61,7 @@
 			position: relative;
 			font-size: 1.5em;
 			font-weight: 300;
-			font-family: 'agendamedium';
+			font-family: $secondFamily;
 			color:#ff9b4b;
 			text-transform: uppercase;
 			text-shadow: 2px 1px 5px #7c7171;
@@ -71,6 +73,13 @@
 			    font-size: 1.4em;
 			    font-family: 'icomoon';
 			    color:#e69865;
+			    transition: color 0.2s ease-out;
+			}
+			&:hover{
+				&:before{
+					color:#fff;
+					transition: color 0.2s ease-out;
+				}
 			}
 		}
 	}
@@ -95,7 +104,7 @@
 	h3{
 		font-size: 2em;
 		font-weight: 300;
-		font-family: 'agenda-bold';
+		font-family: $firstFamily;
 		color:#f7955b;
 		margin:0 0 10px;
 	}
@@ -103,14 +112,14 @@
 		display: block;
 		font-size: 1.286em;
 		font-weight: 400;
-		font-family: 'HelveticaLTStd-Bold';
+		font-family: $fourFamily;
 		color:#3762af;
 		margin: 0 0 10px;
 	}
 	p{
 		font-size: 1em;
 		font-weight: 400;
-		font-family: 'HelveticaLTStd-Roman';
+		font-family: $threeFamily;
 		color:#4e4e4e;
 		margin: 0 0 20px;
 	}
@@ -118,11 +127,11 @@
 		border-bottom: 1px solid #c7c7c7;
 		padding: 0 0 30px;
 	}
-	.slick-mini a{
+	.more{
 		display: inline-block;
 		font-size: 0.86em;
 		font-weight: 300;
-		font-family: 'HelveticaLTStd-Roman';
+		font-family: $threeFamily;
 		color:#fff;
 		text-transform: uppercase;
 		text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
